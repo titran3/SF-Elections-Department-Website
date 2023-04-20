@@ -267,7 +267,7 @@ input::placeholder{
   right:30vh;
   top:85vh;
 }
-@media screen and (min-width:425px)
+@media screen and (min-width:425px) and (max-width:1000px)
 {
   
   page{
