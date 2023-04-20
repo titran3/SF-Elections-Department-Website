@@ -1,0 +1,464 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.page {
+  width: 100%;
+  height: 1150px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.header {
+  color: rgba(37,64,85,1);
+  position: absolute;
+  top: 20.5vh;
+  left: 16vh;
+  font-family: Noto Sans;
+  font-weight: Bold;
+  font-size: 62px;
+  opacity: 1;
+  text-align: left;
+  animation: fade-up 700ms;
+}
+.elections {
+  width: 45vh;
+  color: rgb(37, 37, 37);
+  font-family: 'Noto Sans';
+  position: absolute;
+  top: 1.5vh;
+  left: 24.63vh;
+  font-size: 3.7vh;
+  opacity: 1;
+  text-align: left;
+  animation: fade-up 600ms;
+}
+
+.logo {
+  width:6.6vh;
+  height:6.6vh;
+  opacity: 1;
+  position: absolute;
+  top: 3.4vh;
+  left: 16.63vh;
+  animation: fade-up 600ms;
+}
+.bal{
+  width: 6vh;
+  position: absolute;
+  right:2vh;
+  animation: fade-up 1000ms;
+}
+
+.first-name-text {
+
+  top: 30vh;
+  left: 16.8vh;
+
+}
+.first-name {
+
+  opacity: 1;
+
+  top: 35vh;
+  left: 16.8vh;
+
+}
+.head{
+  width: 198px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  font-family: Noto Sans;
+  font-weight: Medium;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.last-name-text {
+
+  top: 30vh;
+  left: 67.6vh;
+
+}
+.street{
+  top: 50vh;
+  left: 16.8vh;
+}
+.phone{
+  top: 80vh;
+  left: 16.8vh;
+}
+.phonet{
+  width: 40vh;
+  top: 75vh;
+  left: 16.8vh;
+}
+.zipt{
+  top: 60vh;
+  left: 67.6vh;
+}
+.zip{
+  top: 65vh;
+  left: 67.6vh;
+}
+.dobt{
+  width: 40vh;
+  top: 60vh;
+  left: 119vh;
+}
+.dob{
+  top: 65vh;
+  left: 119vh;
+}
+.statet{
+  top: 60vh;
+  left: 16.8vh;
+}
+.state{
+  top: 65vh;
+  left: 16.8vh;
+}
+.streett{
+  width: 30vh;
+  top: 45vh;
+  left: 16.8vh;
+}
+.apartment{
+  top: 50vh;
+  left: 67.6vh;
+}
+.apartmentt{
+  top: 45vh;
+  left: 67.6vh;
+}
+.cityt{
+  top: 45vh;
+  left: 119vh;
+}
+.city{
+  top: 50vh;
+  left: 119vh;
+}
+.last-name {
+
+  opacity: 1;
+
+  top: 35vh;
+  left: 67.6vh;
+
+}
+.email-text {
+
+  top: 30vh;
+  left: 119vh;
+
+}
+.email {
+  left: 119vh;
+  opacity: 1;
+  top: 35vh;
+}
+.affirm {
+  width: 193px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 92vh;
+  left: 16.8vh;
+  font-family: Noto Sans;
+  font-weight: Medium;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+ul{
+  width: 60vh;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 98.8vh;
+  left: 16vh;
+  font-family: Noto Sans;
+  font-weight: Medium;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+.affirmm {
+  width: 70vh;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 96vh;
+  left: 16.8vh;
+  font-family: Noto Sans;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.name {
+  color: #fff;
+}
+.button {
+  cursor: pointer;
+  top:90vh;
+  left: 109vh;
+  position: absolute;
+  background-color: white;
+  width: 51.3vh;
+  height: 20vh;
+  border-radius: 5vh;
+  border: 0.7vh #4896D1 solid;
+  color:#20425C;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-size: 5vh;
+  transition: all 300ms;
+  animation: fade-up 800ms;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 18.5vh;  
+}
+.button:hover { 
+  transform: translateY(-1vh);
+  -webkit-box-shadow: 0px 8px 0px 0px #3c7cad;
+-moz-box-shadow: 0px 8px 0px 0px #3c7cad;
+box-shadow: 0px 8px 0px 0px #3c7cad;
+}
+.button:active{
+  transform: translateY(0.2vh);
+  color:#132635;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1vh #31668f solid;
+}
+input::placeholder{
+  color:rgb(187, 187, 187);
+}
+.affirmation-checkbox{
+  height: 2vh;
+  width: 2vh;
+  opacity: 1;
+  position: absolute;
+  top: 111.76vh;
+  left: 53.8vh;
+}
+.box {
+    background: rgb(236, 236, 236);
+    position: absolute;
+    text-align: left;
+  padding-left: 1.5vh;
+  font-size: 3vh;
+
+  border: 1px solid rgba(0,0,0,1);
+  border-radius: 11px;
+  overflow: hidden;
+  width: 401px;
+  height: 79px;
+}
+.error{
+  font-family: Noto Sans;
+  font-weight: Bold;
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  right:30vh;
+  top:85vh;
+}
+@media screen and (min-width:425px)
+{
+  
+  page{
+    height: 1400px;
+  }
+  .affirm{
+    top:65vh;
+    left:1vh;
+  }
+  .affirmm{
+    width: auto;
+  font-size: 30px;
+  top:65.5vh;
+  left:1vh;
+
+  }
+  .affirmation-checkbox{
+    width: 1.5vh;
+    top:91.7vh;
+    left:45vh;
+  }
+  ul{
+    width: auto;
+    font-size: 30px;
+    top:70vh;
+    left:1vh;
+  
+  }
+  .button{
+
+    line-height: 6vh;
+    font-size: 2vh;
+    border: 0.4vh #4896D1 solid;
+    height: 7vh;
+    top:95vh;
+    width: 45vh;
+    left: 2.5vh;
+    border-radius: 20px;
+  }
+  .page{
+    width:100%;
+    height: 2084px;
+  }
+  .bal{
+    width: 2.6vh;
+    position: absolute;
+    right:2vh;
+    animation: fade-up 600ms;
+  }
+  .elections {
+    top: 1vh;
+    left: 5vh;
+    font-size: 2vh;
+  }
+  .logo {
+    width:4.6vh;
+    height:4.6vh;
+    top: 1.1vh;
+    left: 0vh;
+  }
+  .header {
+    top: 10.5vh;
+    left: 0vh;
+    font-size: 48px;
+    opacity: 1;
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+    width: 44.1vh;
+    top: 28.5vh;
+    left: 0vh;
+    font-size: 23px;
+  }
+  .register{
+    position: absolute;
+    height: 100vh;
+  width: 44.3vh;
+  height: 12.5vh;
+  bottom: 35vh;
+  left: 0vh;
+  animation: fade-up 950ms;
+  }
+  .first-name-text {
+
+    top: 15vh;
+    left: 1vh;
+  
+  }
+  .first-name {
+  
+    opacity: 1;
+  
+    top: 20vh;
+    left: 1vh;.button
+  
+  }
+  .head{
+    width: 198px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    font-family: Noto Sans;
+    font-weight: Medium;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+  .last-name-text {
+  
+    top: 15vh;
+    left: 23.5vh;
+  
+  }
+  .street{
+    top: 30vh;
+    left: 23.5vh;
+  }
+  .phone{
+    top: 60vh;
+    left: 23.5vh;
+  }
+  .phonet{
+    width: 40vh;
+    top: 55vh;
+    left: 23.5vh;
+  }
+  .zipt{
+    top: 45vh;
+    left: 23.5vh;
+  }
+  .zip{
+    top: 50vh;
+    left: 23.5vh;
+  }
+  .dobt{
+    width: 40vh;
+    top: 55vh;
+    left: 1vh;
+  }
+  .dob{
+    top: 60vh;
+    left: 1vh;
+  }
+  .statet{
+    top: 45vh;
+    left: 1vh;
+  }
+  .state{
+    top: 50vh;
+    left: 1vh;
+  }
+  .streett{
+    width: 30vh;
+    top: 25vh;
+    left: 23.5vh; 
+  }
+  .apartment{
+    top: 40vh;
+    left: 1vh;
+  }
+  .apartmentt{
+    top: 35vh;
+    left: 1vh;
+  }
+  .cityt{
+    top: 35vh;
+    left: 23.5vh;
+  }
+  .city{
+    top: 40vh;
+    left: 23.5vh;
+  }
+  .last-name {
+  
+    opacity: 1;
+  
+    top: 20vh;
+    left: 23.5vh;
+  
+  }
+  .email-text {
+  
+    width: 45vh;
+    top: 25vh;
+    left: 1vh;
+  
+  }
+  .email {
+    top: 30vh;
+    left: 1vh;
+    opacity: 1;
+
+  }
+}

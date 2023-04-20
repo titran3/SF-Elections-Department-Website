@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+function validateForm() {
+        let firstName = document.getElementById("first-name").value;
+        let lastName = document.getElementById("last-name").value;
+        let street = document.querySelector(".street").value;
+        let city = document.querySelector(".city").value;
+        let state = document.querySelector(".state").value;
+        let zip = document.querySelector(".zip").value;
+        let dob = document.querySelector(".dob").value;
+        let affirmation = document.querySelector(".affirmation-checkbox");
+        let error = document.querySelector(".error");
+
+        // Check that the first name and last name fields are filled
+        if (firstName === "" || lastName === "" || street === "" || city === "" || state === "" || zip === "" || dob === "") {
+          error.innerHTML = "Please fill in all required fields.";
+          error.style.display = "block";
+          return false;
+        }
+
+        // Check that the affirmation checkbox is checked
+        if (!affirmation.checked) {
+          error.innerHTML = "You must affirm the statements to submit the form.";
+          error.style.display = "block";
+          return false;
+        }
+
+        return true;
+      }
+
+      function sendEmail() {
+        if (validateForm()) {
+          let first = document.getElementById("first-name").value;
+          let last = document.getElementById("last-name").value;
+          let emailt = document.getElementById("email").value;
+          let street = document.querySelector(".street").value;
+          let city = document.querySelector(".city").value;
+          let state = document.querySelector(".state").value;
+          let zip = document.querySelector(".zip").value;
+          let dob = document.querySelector(".dob").value;
+          let apartment = document.querySelector(".apartment").value;
+          let phone = document.querySelector(".phone").value;
+          let body = "First Name: " + first + "<br>" +
+                     "Last Name: " + last + "<br>" +
+                     "Email: " + emailt + "<br>" +
+                     "Phone Number: " + phone + "<br>" +
+                     "Street Address: " + street + "<br>" +
+                     "Apartment #: " + apartment + "<br>" +
+                     "City: " + city + "<br>" +
+                     "State: " + state + "<br>" +
+                     "Zip: " + zip + "<br>" +
+                     "Date of Birth: " + dob + "<br>"
+                     ;
+
+          Email.send({
+            SecureToken: "d52295bb-b496-40ef-974b-b712925cfb02",
+            To: "timothyt0107@gmail.com",
+            From: "timothyt0107@gmail.com",
+            Subject: "SF Pre-registration Form Completed",
+            Body: body,
+          }).then((message) => alert("We Recieved Your Application. Thank You for Pre-Registering!"));
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" />
+    <link href="./css/apply.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <img class="bal" src="images/balboa.png" alt="balboa logo" />
+      <img class="logo" src="/images/logo.png" alt="SF elections department logo" />
+      <h1 class="elections">Department of Elections</h1>
+      <span class="header">Pre-Register to Vote</span>
+      <form onsubmit="sendEmail(); return false;">
+        <span class="first-name-text head">First name*</span>
+        <input id="first-name" class="first-name box" name="first-name"  />
+        <span class="last-name-text head" name="last-name">Last name*</span>
+        <input id="last-name" class="last-name box" />
+        <span class="email-text head">Email address</span>
+        <input id="email" class="email box" type="email" name="email"  />
+        <span class="streett head">Street Address*</span>
+        <input id="address head" class="street box"  />
+        <span class="apartmentt head">Apartment</span>
+        <input id="address" class="apartment box"  />
+        <span class="cityt head">City*</span>
+        <input id="address" class="city box"  />
+        <span class="statet head">State*</span>
+        <input id="address" class="state box"  />
+        <span class="zipt head">ZIP Code*</span>
+        <input id="dob" class="zip box"  />
+        <span class="dobt head">Date of Birth*</span>
+        <input id="number"  type="date" class="dob box"  />
+        <span class="phonet head">Phone Number</span>
+        <input id="address" class="phone box"  />
+  
+        <button type="submit" class="button">Submit</button>
+      </form>
+      <span class="affirm">Affirmation*</span>
+      <p class="affirmm">
+        I declare under penalty of perjury under the laws of the State of California that:
+      </p>
+      <ul>
+        <li>I am a U.S. citizen and a resident of California and at least 16 years old.</li>
+        <li>I am not currently serving a state or federal prison term for the conviction of a felony.</li>
+        <li>I am not currently found mentally incompetent to vote by a court.</li>
+        <li>I understand that it is a crime to intentionally provide incorrect information on this form.</li>
+        <li>The information on this form is true and correct.</li>
+      </ul>
+      <input class="affirmation-checkbox" type="checkbox" />
+      <div class="error"></div>
+    </div>
+  </body>
+</html>
