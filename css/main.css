@@ -1,3 +1,6 @@
+@media screen and (min-width:1441px) {
+  
+
 * {
   box-sizing: border-box;
 }
@@ -138,7 +141,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
 .bold{
   font-weight: 700;
 }
-
+}
 
 @media screen and (max-width:600px)
 {
@@ -166,26 +169,27 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   .header {
     top: 10.5vh;
     left: 0vh;
-    font-size: 36px;
+    font-size: 30px;
     opacity: 1;
     text-align: center;
   }
   .text {
-    text-align: center;
-    width: 44.1vh;
-    top: 28.5vh;
-    left: 3vh;
+
+    text-align: center ;
+    width: 100%;
+    top: 25.5vh;
+    left: 0;
     font-size: 23px;
   }
   .pre-register{
-    top:69vh;
-    left: 3vh;
-    width: 44vh;
-    height: 15vh;
+    top:70vh;
+    left: 0vh;
+    width: 100%;
+    height: 18vh;
     border-radius: 4vh;
     border: 0.6vh #4896D1 solid;
     font-size: 3vh;
-    line-height: 12vh;  
+    line-height: 14vh;  
     
   }
   .pre-register-text {
@@ -220,7 +224,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   animation: fade-up 950ms;
   }
 }
-@media screen and (min-width:601px)
+@media screen and (min-width:601px) and (max-width:768px)
 {
   .bal{
     width: 3.6vh;
@@ -295,7 +299,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   animation: fade-up 950ms;
   }
 }
-@media screen and (min-width:768px)
+@media only screen and (min-width:768px) and (max-width:1000px)
 {
   .bal{
     width: 3.6vh;
@@ -370,124 +374,3 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   animation: fade-up 950ms;
   }
 }
-
-@media screen and (min-width:1440px) {
-  .header {
-    color: rgba(37,64,85,1);
-    position: absolute;
-    top: 15.5vh;
-    left: 10vh;
-    font-family: Noto Sans;
-    font-weight: Bold;
-    font-size: 50px;
-    opacity: 1;
-    text-align: left;
-    animation: fade-up 700ms;
-  }
-  
-  .register{
-    position: absolute;
-    height: 100vh;
-  width: 120.3vh;
-  height: 33vh;
-  bottom: 10vh;
-  left: 10vh;
-  animation: fade-up 950ms;
-  }
-  
-  .elections {
-    width: 45vh;
-    color: rgb(37, 37, 37);
-    font-family: 'Noto Sans';
-    position: absolute;
-    top: 4.5vh;
-    left: 17.63vh;
-    font-size: 3.3vh;
-    opacity: 1;
-    text-align: left;
-    animation: fade-up 600ms;
-  }
-  
-  .pre-register{
-    cursor: pointer;
-    top:35vh;
-    left:80vh;
-    position: absolute;
-    background-color: white;
-    width: 50vh;
-    height: 25vh;
-    border-radius: 5vh;
-    border: 1vh #4896D1 solid;
-    color:#20425C;
-    font-family: 'Noto Sans';
-    font-weight: 700;
-    font-size: 3vh;
-    transition: all 300ms;
-    animation: fade-up 800ms;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 23vh;  
-  }
-  .pre-register-text {
-  
-    position: absolute;
-    top: 4vh; /* position text below button */
-    left: 0;
-    font-weight: 500;
-    font-size: 1.3vh;
-    width: 100%;
-    padding-top: 1rem; /* adjust as needed */
-    opacity: 0; /* hide by default */
-    transition: opacity 300ms ease-in-out; /* add transition effect */
-  }
-  
-  .pre-register:hover {
-    line-height: 20vh;  
-    transform: translateY(-1vh);
-    -webkit-box-shadow: 0px 8px 0px 0px #3c7cad;
-  -moz-box-shadow: 0px 8px 0px 0px #3c7cad;
-  box-shadow: 0px 8px 0px 0px #3c7cad;
-  }
-  .pre-register:hover .pre-register-text{
-    opacity: 1;}
-  
-  .pre-register:active{
-    transform: translateY(0.2vh);
-    color:#132635;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1vh #31668f solid;
-  }
-  .logo {
-    width:6.6vh;
-    height:6.6vh;
-    opacity: 1;
-    position: absolute;
-    top: 3.4vh;
-    left: 10vh;
-    animation: fade-up 600ms;
-  }
-  .bal{
-    width: 6vh;
-    position: absolute;
-    right:2vh;
-    animation: fade-up 1000ms;
-  }
-  .bold{
-    font-weight: 700;
-  }
-  .text {
-    width: 68.1vh;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 31.5vh;
-    left: 10vh;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: left;
-    animation: fade-up 800ms;
-  }
-  
-}
-

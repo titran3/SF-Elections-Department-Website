@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -267,44 +268,45 @@ input::placeholder{
   right:30vh;
   top:85vh;
 }
-@media screen and (min-width:425px) and (max-width:1000px)
+@media only screen and (min-width:600px) and (max-width:1000px)
 {
   
   page{
     height: 1400px;
   }
   .affirm{
-    top:65vh;
+    top:70vh;
     left:1vh;
   }
   .affirmm{
     width: auto;
   font-size: 30px;
-  top:65.5vh;
+  top:71.5vh;
   left:1vh;
 
   }
   .affirmation-checkbox{
     width: 1.5vh;
-    top:91.7vh;
+    top:97.7vh;
     left:45vh;
   }
   ul{
     width: auto;
     font-size: 30px;
-    top:70vh;
+    top:77vh;
     left:1vh;
   
   }
   .button{
+    position: absolute;
 
     line-height: 6vh;
     font-size: 2vh;
     border: 0.4vh #4896D1 solid;
     height: 7vh;
-    top:95vh;
+    top:103vh;
     width: 45vh;
-    left: 2.5vh;
+    left: 4vh;
     border-radius: 20px;
   }
   .page{
@@ -353,7 +355,7 @@ input::placeholder{
   }
   .first-name-text {
 
-    top: 15vh;
+    top: 17vh;
     left: 1vh;
   
   }
@@ -362,7 +364,7 @@ input::placeholder{
     opacity: 1;
   
     top: 20vh;
-    left: 1vh;.button
+    left: 1vh;
   
   }
   .head{
@@ -377,34 +379,34 @@ input::placeholder{
   }
   .last-name-text {
   
-    top: 15vh;
-    left: 23.5vh;
+    top: 17vh;
+    left: 25vh;
   
   }
   .street{
     top: 30vh;
-    left: 23.5vh;
+    left: 25vh;
   }
   .phone{
     top: 60vh;
-    left: 23.5vh;
+    left: 25vh;
   }
   .phonet{
     width: 40vh;
-    top: 55vh;
-    left: 23.5vh;
+    top: 57vh;
+    left: 25vh;
   }
   .zipt{
-    top: 45vh;
-    left: 23.5vh;
+    top: 47vh;
+    left: 25vh;
   }
   .zip{
     top: 50vh;
-    left: 23.5vh;
+    left: 25vh;
   }
   .dobt{
     width: 40vh;
-    top: 55vh;
+    top: 57vh;
     left: 1vh;
   }
   .dob{
@@ -412,7 +414,7 @@ input::placeholder{
     left: 1vh;
   }
   .statet{
-    top: 45vh;
+    top: 47vh;
     left: 1vh;
   }
   .state{
@@ -421,39 +423,45 @@ input::placeholder{
   }
   .streett{
     width: 30vh;
-    top: 25vh;
-    left: 23.5vh; 
+    top: 27vh;
+    left: 25vh; 
   }
   .apartment{
     top: 40vh;
     left: 1vh;
   }
   .apartmentt{
-    top: 35vh;
+    top: 37vh;
     left: 1vh;
   }
   .cityt{
-    top: 35vh;
-    left: 23.5vh;
+    top: 37vh;
+    left: 25vh;
   }
   .city{
     top: 40vh;
-    left: 23.5vh;
+    left: 25vh;
   }
   .last-name {
   
     opacity: 1;
   
     top: 20vh;
-    left: 23.5vh;
+    left: 25vh;
   
   }
   .email-text {
   
     width: 45vh;
-    top: 25vh;
+    top: 27vh;
     left: 1vh;
   
+  }
+  .error{
+    width:40rem;
+    top:99.5vh;
+    left: 4vh;
+    font-size: 30px;
   }
   .email {
     top: 30vh;
