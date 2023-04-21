@@ -1,104 +1,98 @@
-@media screen and (min-width:1441px) {
-  
 
-* {
-  box-sizing: border-box;
-}
-body {
-  overflow: hidden;
-  font-size: 1.2vh;
-  background: rgb(241, 241, 241);
-}
-.page {
-
-  width: 100%;
-  height: 1117px;
-  background: rgb(241, 241, 241);
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.header {
-  color: rgba(37,64,85,1);
-  position: absolute;
-  top: 10.5vh;
-  left: 16vh;
-  font-family: Noto Sans;
-  font-weight: Bold;
-  font-size: 62px;
-  opacity: 1;
-  text-align: left;
-  animation: fade-up 700ms;
-}
-.text {
-  width: 76.1vh;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 22.5vh;
-  left: 16vh;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: left;
-  animation: fade-up 800ms;
-}
-.register{
-  position: absolute;
-  height: 100vh;
-width: 160.3vh;
-height: 43vh;
-bottom: 18vh;
-left: 16vh;
-animation: fade-up 950ms;
-}
-
-.elections {
-  width: 45vh;
-  color: rgb(37, 37, 37);
-  font-family: 'Noto Sans';
-  position: absolute;
-  top: 3.8vh;
-  left: 24.63vh;
-  font-size: 3.7vh;
-  opacity: 1;
-  text-align: left;
-  animation: fade-up 600ms;
-}
-
-.pre-register{
-  cursor: pointer;
-  top:25vh;
-  right:14.5vh;
-  position: absolute;
-  background-color: white;
-  width: 80vh;
-  height: 25vh;
-  border-radius: 5vh;
-  border: 1vh #4896D1 solid;
-  color:#20425C;
-  font-family: 'Noto Sans';
-  font-weight: 700;
-  font-size: 5vh;
-  transition: all 300ms;
-  animation: fade-up 800ms;
-  vertical-align: middle;
-  text-align: center;
-  line-height: 23vh;  
-}
-.pre-register-text {
-
-  position: absolute;
-  top: 4vh; /* position text below button */
-  left: 0;
-  font-weight: 500;
-  font-size: 1.5vh;
-  width: 100%;
-  padding-top: 1rem; /* adjust as needed */
-  opacity: 0; /* hide by default */
-  transition: opacity 300ms ease-in-out; /* add transition effect */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    overflow: visible;
+    font-size: 1.2vh;
+    background: rgb(241, 241, 241);
+  }
+  .page {
+    width: 100%;
+    height: 1117px;
+    background: rgb(241, 241, 241);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: visible;
+  }
+  .header {
+    color: rgba(37,64,85,1);
+    position: absolute;
+    top: 10.5vh;
+    left: 16vh;
+    font-family: Noto Sans;
+    font-weight: Bold;
+    font-size: 62px;
+    opacity: 1;
+    text-align: left;
+    animation: fade-up 700ms;
+  }
+  .text {
+    width: 76.1vh;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 22.5vh;
+    left: 16vh;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+    animation: fade-up 800ms;
+  }
+  .register{
+    position: absolute;
+    height: 100vh;
+    width: 160.3vh;
+    height: 43vh;
+    bottom: 18vh;
+    left: 16vh;
+    animation: fade-up 950ms;
+  }
+  .elections {
+    width: 45vh;
+    color: rgb(37, 37, 37);
+    font-family: 'Noto Sans';
+    position: absolute;
+    top: 3.8vh;
+    left: 24.63vh;
+    font-size: 3.7vh;
+    opacity: 1;
+    text-align: left;
+    animation: fade-up 600ms;
+  }
+  .pre-register{
+    cursor: pointer;
+    top:25vh;
+    right:14.5vh !important;
+    position: absolute;
+    background-color: white;
+    width: 80vh;
+    height: 25vh;
+    border-radius: 5vh;
+    border: 1vh #4896D1 solid;
+    color:#20425C;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 5vh;
+    transition: all 300ms;
+    animation: fade-up 800ms;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 23vh;
+  }
+  .pre-register-text {
+    position: absolute;
+    top: 4vh; /* position text below button */
+    left: 0;
+    font-weight: 500;
+    font-size: 1.5vh;
+    width: 100%;
+    padding-top: 1rem; /* adjust as needed */
+    opacity: 0; /* hide by default */
+    transition: opacity 300ms ease-in-out; /* add transition effect */
 }
 
 .pre-register:hover {
@@ -141,7 +135,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
 .bold{
   font-weight: 700;
 }
-}
+
 
 @media screen and (max-width:600px)
 {
@@ -169,27 +163,28 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   .header {
     top: 10.5vh;
     left: 0vh;
-    font-size: 30px;
+    font-size: 36px;
     opacity: 1;
     text-align: center;
   }
   .text {
-
-    text-align: center ;
+    text-align: center;
     width: 100%;
-    top: 25.5vh;
-    left: 0;
+    margin: auto;
+    top: 28.5vh;
+    left: 0vh;
     font-size: 23px;
   }
   .pre-register{
-    top:70vh;
+    top:69vh;
     left: 0vh;
     width: 100%;
-    height: 18vh;
+    margin: auto;
+    height: 15vh;
     border-radius: 4vh;
     border: 0.6vh #4896D1 solid;
     font-size: 3vh;
-    line-height: 14vh;  
+    line-height: 12vh;  
     
   }
   .pre-register-text {
@@ -224,7 +219,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   animation: fade-up 950ms;
   }
 }
-@media screen and (min-width:601px) and (max-width:768px)
+@media screen and (min-width:601px)
 {
   .bal{
     width: 3.6vh;
@@ -251,21 +246,24 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
     text-align: center;
   }
   .text {
+    left: 0vh;
+    width: 100%;
+    margin: auto;
     text-align: center;
-    width: 50.1vh;
     top: 29.5vh;
-    left: 2vh;
     font-size: 26px;
   }
   .pre-register{
     top:60vh;
     left: 0vh;
-    width: 65vh;
+    width: 100%;
+    margin: auto;
+
     height: 20vh;
     border-radius: 5vh;
     border: 0.6vh #4896D1 solid;
     font-size: 3vh;
-    line-height: 17vh;  
+    line-height: 20vh;  
     
   }
   .pre-register-text {
@@ -291,15 +289,15 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   }
   .register{
     position: absolute;
-    height: 100vh;
-  width: 65.3vh;
+    height: 15% !important;
+  width: 100%;
   height: 16.5vh;
   bottom: 28vh;
   left: 0vh;
   animation: fade-up 950ms;
   }
 }
-@media only screen and (min-width:768px) and (max-width:1000px)
+@media screen and (min-width:768px) and (max-width:1024px)
 {
   .bal{
     width: 3.6vh;
@@ -308,6 +306,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
     animation: fade-up 600ms;
   }
   .elections {
+    
     top: 2vh;
     left: 6.5vh;
     font-size: 2.2vh;
@@ -319,23 +318,28 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
     left: 1vh;
   }
   .header {
-    top: 10.5vh;
     left: 0vh;
+    width: 100%;
+    margin: auto;
+    top: 10.5vh;
     font-size: 45px;
     opacity: 1;
     text-align: center;
   }
   .text {
+    left: 0vh;
+    width: 100%;
+    margin: auto;
     text-align: center;
-    left:10vw;
-    width: 65.1vh;
     top: 29.5vh;
-    font-size: 26px;
+    font-size: 30px;
   }
   .pre-register{
     top:55vh;
-    left: 10vh;
-    width: 65vh;
+    left: 0vh;
+    width: 100%;
+    margin: auto;
+
     height: 20vh;
     border-radius: 5vh;
     border: 0.6vh #4896D1 solid;
@@ -366,11 +370,157 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
   }
   .register{
     position: absolute;
-    height: 100vh;
-  width: 84.3vh;
-  height: 22.5vh;
-  bottom: 27vh;
-  left: 0vh;
+    justify-content: center;
+
+  height: 25% !important;
+  bottom: 20vh;
+  left: 0;
+transform: none;
+  width: 100%;
+  margin: auto;
   animation: fade-up 950ms;
   }
+}
+
+@media screen and (min-width:1024px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    overflow: visible;
+    font-size: 1.2vh;
+    background: rgb(241, 241, 241);
+  }
+  .page {
+    width: 100%;
+    height: 1117px;
+    background: rgb(241, 241, 241);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: visible;
+  }
+  .header {
+    color: rgba(37,64,85,1);
+    position: absolute;
+    top: 10.5vh;
+    left: 16vh;
+    width: 150vh;
+    font-family: Noto Sans;
+    font-weight: Bold;
+    font-size: 62px;
+    opacity: 1;
+    text-align: left;
+    animation: fade-up 700ms;
+  }
+  .text {
+    width: 76.1vh;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 27.5vh;
+    left: 16vh;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+    animation: fade-up 800ms;
+  }
+  .register{
+    position: absolute;
+    height: 35% !important;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18vh;
+margin: auto;
+    animation: fade-up 950ms;
+  }
+  .elections {
+    width: 45vh;
+    color: rgb(37, 37, 37);
+    font-family: 'Noto Sans';
+    position: absolute;
+    top: 3.8vh;
+    left: 24.63vh;
+    font-size: 3.7vh;
+    opacity: 1;
+    text-align: left;
+    animation: fade-up 600ms;
+  }
+  .pre-register{
+    cursor: pointer;
+    top:25vh;
+    left: 95vh;
+    position: absolute;
+    background-color: white;
+    width: 80vh;
+    height: 25vh;
+    border-radius: 5vh;
+    border: 1vh #4896D1 solid;
+    color:#20425C;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 5vh;
+    transition: all 300ms;
+    animation: fade-up 800ms;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 23vh;
+  }
+  .pre-register-text {
+    position: absolute;
+    top: 4vh; /* position text below button */
+    left: 0;
+    font-weight: 500;
+    font-size: 1.5vh;
+    width: 100%;
+    padding-top: 1rem; /* adjust as needed */
+    opacity: 0; /* hide by default */
+    transition: opacity 300ms ease-in-out; /* add transition effect */
+}
+
+.pre-register:hover {
+  line-height: 20.5vh;  
+  transform: translateY(-1vh);
+  -webkit-box-shadow: 0px 8px 0px 0px #3c7cad;
+-moz-box-shadow: 0px 8px 0px 0px #3c7cad;
+box-shadow: 0px 8px 0px 0px #3c7cad;
+}
+.pre-register:hover .pre-register-text{
+  opacity: 1;}
+
+.pre-register:active{
+  transform: translateY(0.2vh);
+  color:#132635;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1vh #31668f solid;
+}
+
+@keyframes fade-up {
+  0%{opacity: 0; transform: translateY(15vh);}
+  0%{opacity: 0; transform: translateY(15vh);}
+  100%{opacity: 1; transform: translateY(0vh);}
+}
+.logo {
+  width:6.6vh;
+  height:6.6vh;
+  opacity: 1;
+  position: absolute;
+  top: 3.4vh;
+  left: 16.63vh;
+  animation: fade-up 600ms;
+}
+.bal{
+  width: 6vh;
+  position: absolute;
+  right:2vh;
+  animation: fade-up 1000ms;
+}
+.bold{
+  font-weight: 700;
+}
+
+
 }
