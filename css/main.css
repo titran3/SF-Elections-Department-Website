@@ -3,7 +3,7 @@
     box-sizing: border-box;
   }
   body {
-    overflow: visible;
+    overflow: hidden;
     font-size: 1.2vh;
     background: rgb(241, 241, 241);
   }
@@ -15,7 +15,7 @@
     position: relative;
     top: 0px;
     left: 0px;
-    overflow: visible;
+    overflow: hidden;
   }
   .header {
     color: rgba(37,64,85,1);
@@ -161,6 +161,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
     left: 1vh;
   }
   .header {
+    width: 100%;
     top: 10.5vh;
     left: 0vh;
     font-size: 36px;
@@ -387,7 +388,7 @@ transform: none;
     box-sizing: border-box;
   }
   body {
-    overflow: visible;
+    overflow: hidden;
     font-size: 1.2vh;
     background: rgb(241, 241, 241);
   }
@@ -399,7 +400,7 @@ transform: none;
     position: relative;
     top: 0px;
     left: 0px;
-    overflow: visible;
+    overflow: hidden;
   }
   .header {
     color: rgba(37,64,85,1);
