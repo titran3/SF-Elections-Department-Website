@@ -7,7 +7,7 @@ body {
 }
 .page {
   width: 100%;
-  height: 1150px;
+  height: 100%;
   background: rgba(255,255,255,1);
   opacity: 1;
   position: relative;
@@ -189,7 +189,7 @@ ul{
   width: 60vh;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 98.8vh;
+  top: 102.8vh;
   left: 16vh;
   font-family: Noto Sans;
   font-weight: Medium;
@@ -214,7 +214,7 @@ ul{
 }
 .button {
   cursor: pointer;
-  top:90vh;
+  top:110vh;
   left: 109vh;
   position: absolute;
   background-color: white;
@@ -252,7 +252,7 @@ input::placeholder{
   width: 2vh;
   opacity: 1;
   position: absolute;
-  top: 111.76vh;
+  top: 130.76vh;
   left: 53.8vh;
 }
 .box {
@@ -275,34 +275,34 @@ input::placeholder{
   display: none;
   position: absolute;
   right:30vh;
-  top:85vh;
+  top:95vh;
 }
 @media only screen and (min-width:600px) and (max-width:1000px)
 {
-  
-  page{
-    height: 1400px;
-  }
+  .page{height:none}
+  body{height: 130vh;}
   .affirm{
-    top:70vh;
+    top:75vh;
     left:1vh;
   }
   .affirmm{
     width: auto;
   font-size: 30px;
-  top:71.5vh;
+  top:77.5vh;
   left:1vh;
 
   }
   .affirmation-checkbox{
     width: 1.5vh;
-    top:97.7vh;
-    left:45vh;
+    top:32vh;
+    left: 1vh;
+    
+
   }
   ul{
     width: auto;
     font-size: 30px;
-    top:77vh;
+    top:82vh;
     left:1vh;
   
   }
@@ -313,14 +313,13 @@ input::placeholder{
     font-size: 2vh;
     border: 0.4vh #4896D1 solid;
     height: 7vh;
-    top:103vh;
+    top:120vh;
     width: 45vh;
     left: 4vh;
     border-radius: 20px;
   }
   .page{
     width:100%;
-    height: 2084px;
   }
   .bal{
     width: 2.6vh;
@@ -397,13 +396,13 @@ input::placeholder{
     left: 25vh;
   }
   .party{
-    top:  60vh;
-    left: 25vh;
+    top:  70vh;
+    left: 1vh;
   }
   .partyt{
-    width: 70vh;
-    top: 57vh;
-    left: 25vh;
+    width: 67vh;
+    top: 67vh;
+    left: 1vh;
   }
   .phone{
     top: 60vh;
