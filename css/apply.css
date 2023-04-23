@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 body {
+  height: 150vh;
   font-size: 14px;
 }
 .page {
