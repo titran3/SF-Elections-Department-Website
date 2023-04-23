@@ -351,6 +351,11 @@ input::placeholder{
     left: 0vh;
     font-size: 23px;
   }
+  .box{
+    padding-left: 1vh;
+    font-size: 1.5vh;
+  
+  }
   .register{
     position: absolute;
     height: 100vh;
@@ -475,7 +480,7 @@ input::placeholder{
   }
   .error{
     width:40rem;
-    top:99.5vh;
+    top:116vh;
     left: 4vh;
     font-size: 30px;
   }
