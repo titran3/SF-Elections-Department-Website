@@ -90,6 +90,15 @@ body {
   top: 50vh;
   left: 16.8vh;
 }
+.party{
+  top: 80vh;
+  left: 67.6vh;
+}
+.partyt{
+  width: 70vh;
+  top: 75vh;
+  left: 67.6vh;
+}
 .phone{
   top: 80vh;
   left: 16.8vh;
@@ -385,6 +394,15 @@ input::placeholder{
   }
   .street{
     top: 30vh;
+    left: 25vh;
+  }
+  .party{
+    top:  60vh;
+    left: 25vh;
+  }
+  .partyt{
+    width: 70vh;
+    top: 57vh;
     left: 25vh;
   }
   .phone{

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "df6b2b7e52974dc8bde3e741839fd6eb"}'></script><!-- End Cloudflare Web Analytics -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
 function validateForm() {
@@ -44,6 +44,7 @@ function validateForm() {
           let dob = document.querySelector(".dob").value;
           let apartment = document.querySelector(".apartment").value;
           let phone = document.querySelector(".phone").value;
+          let party = document.querySelector(".party").value;
           let body = "First Name: " + first + "<br>" +
                      "Last Name: " + last + "<br>" +
                      "Email: " + emailt + "<br>" +
@@ -54,6 +55,7 @@ function validateForm() {
                      "State: " + state + "<br>" +
                      "Zip: " + zip + "<br>" +
                      "Date of Birth: " + dob + "<br>"
+                     "Political Party Preference: " + party
                      ;
 
           Email.send({
@@ -62,7 +64,7 @@ function validateForm() {
             From: "timothyt0107@gmail.com",
             Subject: "SF Pre-registration Form Completed",
             Body: body,
-          }).then((message) => alert("We Recieved Your Application. Thank You for Pre-Registering!"));
+          }).then((message) => 	window.location="confirm.html");
         }
       }
     </script>
@@ -96,7 +98,9 @@ function validateForm() {
         <span class="dobt head">Date of Birth*</span>
         <input id="number"  type="date" class="dob box"  />
         <span class="phonet head">Phone Number</span>
-        <input id="address" class="phone box"  />
+        <input id="party" class="phone box"  />
+        <span class="partyt head">Politcal Party Preference</span>
+        <input id="party" placeholder="If none, leave blank" class="party box"  />
   
         <button type="submit" class="button">Submit</button>
       </form>
@@ -110,6 +114,10 @@ function validateForm() {
         <li>I am not currently found mentally incompetent to vote by a court.</li>
         <li>I understand that it is a crime to intentionally provide incorrect information on this form.</li>
         <li>The information on this form is true and correct.</li>
+        <li>I understand that the information I provided will only be used to complete the online voter registration application.
+        </li>
+        <li>I confirm that Timothy Tran will help me fill out this form.</li>
+        <li>I understand that I may have to show my ID the first time I vote because I did not provide identification on this form.</li>
       </ul>
       <input class="affirmation-checkbox" type="checkbox" />
       <div class="error"></div>

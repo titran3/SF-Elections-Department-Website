@@ -143,6 +143,11 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
     width: 600px;
     overflow:scroll;
   }
+  .textt {
+    padding-top: 35% !important;
+    text-align: center;
+    font-size: 30px !important;
+}
   .bal{
     width: 2.6vh;
     position: absolute;
@@ -161,6 +166,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
     left: 1vh;
   }
   .header {
+    
     width: 100%;
     top: 10.5vh;
     left: 0vh;
@@ -240,6 +246,7 @@ box-shadow: 0px 8px 0px 0px #3c7cad;
     left: 1vh;
   }
   .header {
+    width: 100%;
     top: 10.5vh;
     left: 0vh;
     font-size: 45px;
@@ -452,7 +459,7 @@ margin: auto;
   }
   .pre-register{
     cursor: pointer;
-    top:25vh;
+    top:35vh;
     left: 95vh;
     position: absolute;
     background-color: white;
